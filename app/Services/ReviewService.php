@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Interfaces\ReviewInterface;
 use App\Models\Review;
 
 class ReviewService implements ReviewInterface

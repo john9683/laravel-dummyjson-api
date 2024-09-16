@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Interfaces\ImageInterface;
 use App\Models\Image;
 
 class ImageService implements ImageInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace App\Interfaces;
 
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;

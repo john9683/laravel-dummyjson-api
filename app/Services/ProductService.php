@@ -2,6 +2,9 @@
 
 namespace App\Services;
 
+use App\Interfaces\ImageInterface;
+use App\Interfaces\ProductInterface;
+use App\Interfaces\ReviewInterface;
 use App\Models\Product;
 
 class ProductService implements ProductInterface
@@ -59,7 +62,7 @@ class ProductService implements ProductInterface
      * @param int $productId
      * @return void
      */
-    private function deleteProductIfExist(int $productId): void
+    public function deleteProductIfExist(int $productId): void
     {
         $productExist = Product::find($productId);
 
@@ -81,7 +84,7 @@ class ProductService implements ProductInterface
      * @param array $attributes
      * @return Product
      */
-    private function createProduct(array $attributes): Product
+    public function createProduct(array $attributes): Product
     {
         $product = new Product([
             'id' => $attributes['id'],

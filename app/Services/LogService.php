@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Interfaces\LogInterface;
 use Illuminate\Support\Facades\Log;
 
 class LogService implements LogInterface
